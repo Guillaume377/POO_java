@@ -5,34 +5,34 @@ package Humains;
 public class Femme extends Humain {
     
     // Attribut supplémentaire :
-    private String magazinePreferee;
+    private String magazinePrefere;
 
     /* Constructeur : nous réutilisons les attributs de la classe Humain
     = super */ 
     public Femme(String nom, String prenom, int age) {
         super(nom, prenom, age);
-        this.magazinePreferee = "";
+        this.magazinePrefere = "";
     }
 
     // Constructeur : nous rajoutons l'attribut "magazinePreferee"
-    public Femme(String nom, String prenom, int age, double taille, double poids, int anneeNaissance, String pays, String magazinePrefereeFemme) {
+    public Femme(String nom, String prenom, int age, double taille, double poids, int anneeNaissance, String pays, String magazinePrefereFemme) {
         super(nom, prenom, age, taille, poids, anneeNaissance, pays);
-        magazinePreferee = magazinePrefereeFemme;
+        magazinePrefere = magazinePrefereFemme;
     }
 
      // Méthode
     public void sayHello() {
-        System.out.println("Bonjour, je m'appelle " + prenom + " " + nom + ", je suis une femme et j'ai" + age + "ans.");
+        System.out.println("Bonjour, je m'appelle " + prenom + " " + nom + ", je suis une femme et j'ai " + age + " ans.");
 
     }
 
     // Getter
-    public String getMagazinePreferee() {
-        return magazinePreferee;
+    public String getMagazinePrefere() {
+        return magazinePrefere;
     }
 
     // Setter
-    public void setMagazinePreferee(String magazinePreferee) {
-        this.magazinePreferee = magazinePreferee;
+    public void setMagazinePrefere(String magazinePrefere) {
+        this.magazinePrefere = magazinePrefere;
     }
 }
