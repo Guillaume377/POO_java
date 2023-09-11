@@ -78,6 +78,7 @@ public class Main {
         // Afficher les informations de l'école
         arinfo.showInformations();
 
+        // Bouclez sur l'attribut étudiant avec une boucle for :
         for (Etudiant etudiant : arinfo.getEtudiants()) {
 
             etudiant.sayHello();

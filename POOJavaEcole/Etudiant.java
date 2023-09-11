@@ -19,8 +19,8 @@ public class Etudiant {
         this.diplomeObtenu = diplomeObtenu;
     }
 
-    /*
-     * Méthode : ne retourne rien mais affiche le texte « Bonjour, je
+    
+     /* Méthode : ne retourne rien mais affiche le texte « Bonjour, je
      * m’appelle… » suivi du prénom et du nom de l’étudiant, age et matière étudiée.
      */
 
@@ -29,7 +29,8 @@ public class Etudiant {
                 + matiereEtudiee + ".");
     }
 
-    
+    // Méthode : condition si diplôme obtenu
+
     public void isGraduated() {
         if (diplomeObtenu = true) {
             System.out.println("j'ai obtenu mon diplôme");
@@ -38,7 +39,9 @@ public class Etudiant {
         }
     }
 
+
     // Getter
+
     public String getNom() {
         return nom;
     }
@@ -61,6 +64,7 @@ public class Etudiant {
 
 
     // Setter : permet de modifier
+
     public void setNom(String nom) {
         this.nom = nom;
     }
