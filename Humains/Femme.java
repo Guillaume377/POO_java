@@ -35,4 +35,15 @@ public class Femme extends Humain {
     public void setMagazinePrefere(String magazinePrefere) {
         this.magazinePrefere = magazinePrefere;
     }
+
+
+    // Méthode sayEverything redéfinie: affiche une phrase supplémentaire avec
+    // le magazine préférée
+
+    public void sayEverything() {
+        super.sayEverything();// appelle la phrase précédente contenant les précédentes infos.
+
+        System.out.println("Mon magazine préféré est " + magazinePrefere + ".");
+
+    }
 }

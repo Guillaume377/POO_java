@@ -56,6 +56,8 @@ public abstract class Humain {
     this.poids = poids;
   }
 
+  // ===================================================================
+  
    /* Méthode sayEverything : ne retourne rien mais affiche le texte « Bonjour, je m’appelle… » 
    suivi du prénom et du nom de l’humain, age, poids, taille, année de naissance, pays.*/
       

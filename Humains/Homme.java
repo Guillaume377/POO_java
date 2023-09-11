@@ -7,14 +7,17 @@ public class Homme extends Humain {
     // Attribut supplémentaire :
     private String equipePreferee = "aucune";
 
-    /* Constructeur : nous réutilisons les attributs de la classe Humain
-    = super */ 
+    /*
+     * Constructeur : nous réutilisons les attributs de la classe Humain
+     * = super
+     */
     public Homme(String nom, String prenom, int age) {
         super(nom, prenom, age);
     }
 
     // Constructeur : nous rajoutons l'attribut "equipePreferee"
-    public Homme(String nom, String prenom, int age, double taille, double poids, int anneeNaissance, String pays, String equipePrefereeHomme) {
+    public Homme(String nom, String prenom, int age, double taille, double poids, int anneeNaissance, String pays,
+            String equipePrefereeHomme) {
         super(nom, prenom, age, taille, poids, anneeNaissance, pays);
         equipePreferee = equipePrefereeHomme;
     }
@@ -28,5 +31,15 @@ public class Homme extends Humain {
     // Getter
     public String getEquipePreferee() {
         return equipePreferee;
+    }
+
+    // Méthode sayEverything redéfinie: affiche une phrase supplémentaire avec
+    // l'équipe préférée
+
+    public void sayEverything() {
+        super.sayEverything();// appelle la phrase précédente contenant les précédentes infos.
+
+        System.out.println("Mon équipe préférée est " + equipePreferee + ".");
+
     }
 }
